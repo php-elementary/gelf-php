@@ -71,7 +71,7 @@ class StompTransport extends AbstractTransport
                 $message = 'Error when sending a message';
             }
 
-            throw new \StompException($message);
+            throw new \StompException($message, 500);
         }
 
         return 1;
